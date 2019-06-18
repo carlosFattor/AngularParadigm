@@ -1,0 +1,20 @@
+<div>
+  <h1>Imperative Typeahead</h1>
+  <div>
+    <input
+      type="text"
+      placeholder="Search Term"
+      [ngModel]="searchTermI"
+      (ngModelChange)="changeSearchTerm($event)"
+    />
+    <ul>
+      <li
+        *ngFor="let item of data"
+        [innerHTML]="item"
+      ></li>
+    </ul>
+  </div>
+</div>
+<div>
+
+</div>
