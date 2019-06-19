@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Subject, Subscription } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
 import { EmitEvent } from 'src/app/utils/emit-event';
+import { Events } from '../utils/events.enum';
 
 @Injectable()
 export class EventBusService {

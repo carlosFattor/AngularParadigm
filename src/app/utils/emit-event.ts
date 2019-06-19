@@ -1,3 +1,5 @@
+import { Events } from './events.enum';
+
 export class EmitEvent {
   name: Events;
   value: any;
