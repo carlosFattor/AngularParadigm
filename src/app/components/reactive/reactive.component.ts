@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { switchMap } from 'rxjs/internal/operators/switchMap';
 import { Subject } from 'rxjs/internal/Subject';
-import { ApiService } from 'src/services/api.service';
+import { ApiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'app-reactive',
@@ -27,5 +27,4 @@ export class ReactiveComponent {
   );
 
   constructor(private apiService: ApiService) { }
-
 }

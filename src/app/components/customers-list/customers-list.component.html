@@ -1,0 +1,11 @@
+<h1>Customers list</h1>
+<div class="wrapper">
+  <div *ngFor="let customer of customers$ | async">
+    <div
+      class="_customer"
+      (click)="selectCustomer(customer)"
+    >
+      <p><span>Nome: {{customer.name}}</span></p>
+    </div>
+  </div>
+</div>
